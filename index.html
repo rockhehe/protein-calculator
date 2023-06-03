@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Protein Calculator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Protein Calculator</h1>
+  <div class="container">
+    <label for="weight">Weight (in kg):</label>
+    <input min ="0" type="number" id="weight" name="weight" required>
+    <br>
+    <label for="age">Age:</label>
+    <input min="0" type="number" id="age" required>
+    <br>
+    <label for="activity-level">Activity Level:</label>
+    <select id="activity-level" name="activity-level">
+      <option value="1.2">Sedentary</option>
+      <option value="1.375">Lightly Active</option>
+      <option value="1.55">Moderately Active</option>
+      <option value="1.725">Very Active</option>
+      <option value="1.9">Extremely Active</option>
+    </select>
+    <br>
+    <button id="calculate-btn">Calculate Protein Intake</button>
+    <br><br>
+    <p>Your daily protein intake should be: <span id="result"></span> grams.</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
